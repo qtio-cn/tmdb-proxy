@@ -48,6 +48,10 @@ module.exports = async (req, res) => {
         return;
     }
 
+    if (req.url === '/') {
+        return res.status(200).send('测试');
+    }
+
     try {
         const fullPath = req.url;
         const authHeader = req.headers.authorization;
