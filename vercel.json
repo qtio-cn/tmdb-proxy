@@ -2,6 +2,10 @@
     "version": 2,
     "rewrites": [
         {
+            "source": "/",
+            "destination": "/api/tmdb.js"
+        },
+        {
             "source": "/t/p/:path*",
             "destination": "https://image.tmdb.org/t/p/:path*"
         },
